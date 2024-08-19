@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercisio 1</title>
+    <link rel="stylesheet" href="ejercisio1.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="miCarrusel">
+            <img src="portada1.jpg" alt="imagen-1">
+        </div>
+        <div class="miCarrusel">
+            <img src="portada2.jpg" alt="">
+        </div>
+        <div class="miCarrusel">
+            <img src="portada3.jpg" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="elements">
+            <span class="quadrate" onclick="currentSlide(1)"></span>
+            <span class="quadrate" onclick="currentSlide(2)"></span>
+            <span class="quadrate" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- Añadir música de fondo -->
+     <div class="audio">
+    <audio controls autoplay>
+        <source src="musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+</div>
+    
+    <script src="ejercisio1.js"></script>
+</body>
+</html>
